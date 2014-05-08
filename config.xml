@@ -16,10 +16,10 @@
    <!-- Full Screen -->
    <preference name="fullscreen" value="true" />
 
-   <name>Config.xml</name>
+   <name>Lyric Finder</name>
 
    <description>
-      An example for phonegap build docs.
+      Find lyrics to your favorite songs.
    </description>
 
    <author href="http://manvilledesign.com" email="Jmanville@manvilledesign.com">
