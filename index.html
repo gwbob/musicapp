@@ -12,12 +12,21 @@
     
     <SCRIPT LANGUAGE="JavaScript">
 function music (form) {
-    
-var changeString= form.song.value;
-alert(changeString.replace(/ /g,'-'));
-alert("www." + changeString.replace(/ /g,'-') +".com");
 
-var page = "http://www.lyrics.com/" + changeString.replace(/ /g,'-') + ".html";
+
+        
+var changeSong= form.song.value;
+<!--alert(changeSong.replace(/ /g,'-'));-->
+
+var changeArtist = form.artist.value;
+
+        
+<!--alert("www. " + changeSong.replace(/ /g,'-') +" lyrics " + changeArtist.replace(/ /g,'-') + " .com");-->
+
+        
+        
+        
+var page = "http://www.lyrics.com/" + changeSong.replace(/ /g,'-') + "-" + "lyrics" + "-" + changeArtist.replace(/ /g,'-') + ".html";
         
 <!--window.location.assign(page);-->
         
@@ -45,7 +54,8 @@ var ref = window.open(encodeURI(page), '_blank', 'location=yes');
 <TITLE>Test Input</TITLE>
 
 <FORM NAME="myform" ACTION="" METHOD="GET">Please fill out the required song information<BR>
-<INPUT TYPE="text" NAME="song" VALUE="">
+Artist:<INPUT TYPE="text" NAME="song" VALUE="">
+Artist:<INPUT TYPE="text" NAME="artist" VALUE="">
     
 <INPUT TYPE="button" NAME="button" Value="Click" onClick="music(this.form)">
 </FORM>
