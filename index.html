@@ -85,28 +85,64 @@ function onSuccess(position) {
 	<form>
 	<HTML>
 <HEAD>
-<TITLE>Test Input</TITLE>
 
-<FORM NAME="myform" ACTION="" METHOD="GET">Please fill out the required song information<BR>
-Song:<INPUT TYPE="text" NAME="song" VALUE="">
-Artist:<INPUT TYPE="text" NAME="artist" VALUE="">
     
-<INPUT TYPE="button" NAME="button" Value="Click" onClick="music(this.form)">
-</FORM>
+<div data-role="content">	   
+		<a data-role="button" href="#page2" data-icon = "arrow-r" data-transition="slide" data-iconpos="right" >Lyrics</a>
+		<a data-role="button" href="#page3" data-icon = "arrow-r" data-transition="slide" data-iconpos="right" >Locaiton</a>
+</div>
+
+</div>   
+
+	</div>
+
+
+
+<div data-role="page" id="page2" data-theme ="a">
+	<div data-role="header">
+		<h1>Lyrics</h1>
+	</div>
+	<div data-role="content">
+	   <FORM NAME="myform" ACTION="" METHOD="GET">Please fill out the required song information<BR>
+    Song:<INPUT TYPE="text" NAME="song" VALUE="">
+    Artist:<INPUT TYPE="text" NAME="artist" VALUE="">
+        
+    <INPUT TYPE="button" NAME="button" Value="Click" onClick="music(this.form)">
+    </FORM>
+    <a data-role="button" href="#page" data-icon = "arrow-l" data-transition="slide" data-iconpos="left" data-rel ="back">Back</a>
+	  <br/>
+	  
+	</div>
+	
+</div>    
     
- <p id="geolocation"></p>    
+    
+    
+    
+<div data-role="page" id="page3" data-theme ="a">
+	<div data-role="header">
+		<h1>Location</h1>
+	</div>
+	<div data-role="content">
+	  <p id="geolocation"></p>  
+	  <br/>
+	  
+	</div>
+	 <a data-role="button" href="#page" data-icon = "arrow-l" data-transition="slide" data-iconpos="left" data-rel ="back">Back</a>
+</div>    
     
     
     
     
     
+    
+  
     
     
     
 </BODY>
 </HTML>
 	
-	</div>
 	
 	
         
