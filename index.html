@@ -56,8 +56,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);
         
 function onSuccess(position) {
         var element = document.getElementById('geolocation');
-        element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
-                            'Longitude: '          + position.coords.longitude             + '<br />';
+        element.innerHTML = 'Your latitude: ' + position.coords.latitude   + '<br />' + 'Your longitude: '          + position.coords.longitude             + '<br />';
     }
 
     // onError Callback receives a PositionError object
@@ -95,7 +94,7 @@ Artist:<INPUT TYPE="text" NAME="artist" VALUE="">
 <INPUT TYPE="button" NAME="button" Value="Click" onClick="music(this.form)">
 </FORM>
     
- <p id="geolocation">Finding geolocation...</p>    
+ <p id="geolocation"></p>    
     
     
     
